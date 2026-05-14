@@ -1,0 +1,33 @@
+
+🧾 Invoice App — Java Method Challenges
+Context: You're building an Invoice class with fields: name, amount, iban
+
+1. printInvoice()
+Print all three invoice fields in a formatted message.
+
+2. sendInvoice(String email)
+Print a confirmation that the invoice was sent to a given email.
+
+3. calculateTax(double amount, double taxRate)
+Return the tax amount (amount × taxRate).
+
+4. calculateTotal(double amount, double taxRate)
+Return the total including tax. (Hint: call calculateTax inside)
+
+5. isValidAmount(double amount)
+Return true if amount is greater than zero.
+
+6. isValidIban(String iban)
+Return true if iban starts with 2 letters and is at least 15 chars long.
+
+7. applyDiscount(double amount, double discountPercent)
+Return the amount after discount is applied.
+
+8. processInvoice(double amount, double taxRate, double discountPercent)
+Apply discount first, then calculate total. Print the final result. (calls #4 and #7)
+
+9. convertCurrency(double amount, char targetCurrency)
+Support 'u' for USD and 'g' for GBP using fixed rates. Return converted amount.
+
+10. generateSummary(String name, double amount, String iban, double taxRate)
+Return a full formatted invoice string with name, iban, amount, tax, and total.
